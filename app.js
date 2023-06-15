@@ -1,5 +1,5 @@
 require('apostrophe')({
-  shortName: 'a3-demo',
+  shortName: 'blog-cms',
   baseUrl: 'http://localhost:3000',
   modules: {
     localizations: {},
