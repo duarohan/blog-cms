@@ -2,20 +2,27 @@ module.exports = {
   options: {
     groups: [
       {
-        name: 'media',
-        label: 'Media',
+        name: 'file',
+        label: 'File',
         items: [
-          '@apostrophecms/image',
           '@apostrophecms/file',
-          '@apostrophecms/image-tag',
           '@apostrophecms/file-tag'
         ]
       },
       {
-        name: 'pieces',
-        label: 'Content',
+        name: 'images',
+        label: 'Images',
         items: [
-          'article'
+          '@apostrophecms/image',
+          '@apostrophecms/image-tag'
+        ]
+      },
+      {
+        name: 'pieces',
+        label: 'Article',
+        items: [
+          'article',
+          'topic'
         ]
       }
     ]

@@ -5,16 +5,12 @@ module.exports = {
   options: {
     types: [
       {
+        name: 'blog-post-page',
+        label: 'Blog Index'
+      },
+      {
         name: 'default-page',
         label: 'Default'
-      },
-      {
-        name: 'article-page',
-        label: 'Article Index'
-      },
-      {
-        name: '@apostrophecms/home-page',
-        label: 'Home'
       }
     ]
   }
