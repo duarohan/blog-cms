@@ -45,6 +45,10 @@ module.exports = {
         label: 'Blog Title',
         type: 'string'
       },
+      featured: {
+        label: 'Featured',
+        type: 'boolean'
+      },
       publishedAt: {
         label: 'Published',
         type: 'date'
@@ -60,5 +64,47 @@ module.exports = {
         fields: [ 'content' ]
       }
     }
+  },
+  columns: {
+    add: {
+      lastPublishedAt: {
+        label: 'Published',
+        component: 'AposCellDate'
+      },
+      _authors: {
+        label: 'Authors',
+        component: 'DemoCellRelation'
+      },
+      _categories: {
+        label: 'Categories',
+        component: 'DemoCellRelation'
+      }
+    }
+  },
+  filters: {
+    add: {
+      _authors: {
+        label: 'Authors'
+      },
+      _categories: {
+        label: 'Categories'
+      },
+      featured: {
+        labeled: 'Featured',
+        inputType: 'radio',
+        def: true,
+        choices: [
+          {
+            value: true,
+            label: 'Show featured'
+          },
+          {
+            value: false,
+            label: 'Hide featured'
+          }
+        ]
+      }
+    },
+    remove: [ 'archived', 'visibility' ]
   }
 };
